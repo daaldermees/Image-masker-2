@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" xmlns="http://www.w3.org/2000/svg" width="230.67" height="78.9" viewBox="0 0 230.67 78.9">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #ededed;
+      }
+    </style>
+  </defs>
+  <g id="Primitives">
+    <path class="cls-1" d="M223.36,78.9H7.31c-6.05,0-7.71-1.79-7.23-7.82L5.93,6.79C6.35,1.4,7.87,0,13.28,0h210.08c5.73,0,7.32,1.59,7.32,7.32v64.27c0,5.73-1.59,7.32-7.32,7.32Z"/>
+  </g>
+</svg>

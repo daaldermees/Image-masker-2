@@ -1,0 +1,70 @@
+{
+  "common": {
+    "download": "Download",
+    "copyToClipboard": "Copy to Clipboard",
+    "reset": "Reset",
+    "uploadImage": "Drop an image here or click to select",
+    "squareImagesWork": "Square images work best",
+    "pleaseUploadFirst": "Please upload an image first",
+    "pleaseCompleteFields": "Please enter your name and phone number",
+    "successDownload": "Image downloaded successfully",
+    "successCopy": "Image copied to clipboard",
+    "successUpload": "Image uploaded successfully",
+    "errorInvalidFile": "Please select a valid image file",
+    "errorLoadImage": "Failed to load image",
+    "errorReadFile": "Failed to read image file",
+    "errorCopy": "Failed to copy image",
+    "fileSize": "File size"
+  },
+  "layout": {
+    "home": "Home",
+    "tools": "Tools",
+    "imageMask": "Image Mask",
+    "quotes": "Quotes",
+    "emailSignature": "Email Signature"
+  },
+  "imageMasker": {
+    "title": "Image Masker",
+    "description": "Apply custom shapes to your images to create perfectly masked profile pictures or thumbnails.",
+    "step1": "Step 1: Upload an image",
+    "step2": "Step 2: Choose a mask shape",
+    "step3": "Step 3: Adjust image position",
+    "zoomIn": "Zoom In",
+    "zoomOut": "Zoom Out",
+    "flipHorizontal": "Flip Horizontal",
+    "flipVertical": "Flip Vertical",
+    "resetPosition": "Reset Position",
+    "backgroundColor": "Background Color",
+    "preview": "Preview",
+    "noImageSelected": "No Image Selected",
+    "uploadToPreview": "Upload an image to see the preview here",
+    "dragToReposition": "Drag to reposition the image. Use the controls to zoom and flip the mask."
+  },
+  "quoteGenerator": {
+    "title": "Quote Generator",
+    "description": "Create branded quotes with your profile image that can be easily shared on social media.",
+    "step1": "Step 1: Upload a profile image",
+    "step2": "Step 2: Enter quote text",
+    "step3": "Step 3: Style your quote",
+    "quoteText": "Quote Text (max 3 lines)",
+    "author": "Author",
+    "quoteMarksColor": "Quote Marks Color",
+    "containerColor": "Quote Container Color",
+    "personBgColor": "Person Background Color",
+    "preview": "Preview",
+    "downloadPng": "Download PNG"
+  },
+  "emailSignature": {
+    "title": "Email Signature Generator",
+    "description": "Create professional email signatures with your profile photo and contact information.",
+    "step1": "Step 1: Enter your information",
+    "step2": "Step 2: Upload your profile image",
+    "firstName": "First Name",
+    "lastName": "Last Name",
+    "phoneNumber": "Phone Number",
+    "enterFirstName": "Enter your first name",
+    "enterLastName": "Enter your last name",
+    "enterPhoneNumber": "Enter your phone number",
+    "preview": "Preview"
+  }
+} 

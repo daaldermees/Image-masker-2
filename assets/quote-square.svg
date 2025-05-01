@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" xmlns="http://www.w3.org/2000/svg" width="34.56" height="34.56" viewBox="0 0 34.56 34.56">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #ededed;
+      }
+    </style>
+  </defs>
+  <g id="Primitives">
+    <rect class="cls-1" x="4.26" y="4.26" width="26.03" height="26.03" rx="3.87" ry="3.87" transform="translate(-7.16 17.28) rotate(-45)"/>
+  </g>
+</svg>

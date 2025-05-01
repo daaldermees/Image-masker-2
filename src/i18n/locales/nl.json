@@ -1,0 +1,70 @@
+{
+  "common": {
+    "download": "Downloaden",
+    "copyToClipboard": "Kopiëren naar klembord",
+    "reset": "Resetten",
+    "uploadImage": "Sleep een afbeelding hierheen of klik om te selecteren",
+    "squareImagesWork": "Vierkante afbeeldingen werken het beste",
+    "pleaseUploadFirst": "Upload eerst een afbeelding",
+    "pleaseCompleteFields": "Vul je naam en telefoonnummer in",
+    "successDownload": "Afbeelding succesvol gedownload",
+    "successCopy": "Afbeelding gekopieerd naar klembord",
+    "successUpload": "Afbeelding succesvol geüpload",
+    "errorInvalidFile": "Selecteer een geldige afbeelding",
+    "errorLoadImage": "Kan afbeelding niet laden",
+    "errorReadFile": "Kan bestand niet lezen",
+    "errorCopy": "Kan afbeelding niet kopiëren",
+    "fileSize": "Bestandsgrootte"
+  },
+  "layout": {
+    "home": "Home",
+    "tools": "Tools",
+    "imageMask": "Afbeeldingsmasker",
+    "quotes": "Citaten",
+    "emailSignature": "E-mailhandtekening"
+  },
+  "imageMasker": {
+    "title": "Afbeeldingsmasker",
+    "description": "Pas aangepaste vormen toe op je afbeeldingen om perfect gemaskerde profielfoto's of miniaturen te maken.",
+    "step1": "Stap 1: Upload een afbeelding",
+    "step2": "Stap 2: Kies een maskervorm",
+    "step3": "Stap 3: Pas de afbeeldingspositie aan",
+    "zoomIn": "Inzoomen",
+    "zoomOut": "Uitzoomen",
+    "flipHorizontal": "Horizontaal spiegelen",
+    "flipVertical": "Verticaal spiegelen",
+    "resetPosition": "Positie resetten",
+    "backgroundColor": "Achtergrondkleur",
+    "preview": "Voorbeeld",
+    "noImageSelected": "Geen afbeelding geselecteerd",
+    "uploadToPreview": "Upload een afbeelding om het voorbeeld hier te zien",
+    "dragToReposition": "Sleep om de afbeelding te herpositioneren. Gebruik de knoppen om te zoomen en het masker te spiegelen."
+  },
+  "quoteGenerator": {
+    "title": "Citaatgenerator",
+    "description": "Maak gebrandmerkte citaten met je profielfoto die gemakkelijk gedeeld kunnen worden op sociale media.",
+    "step1": "Stap 1: Upload een profielfoto",
+    "step2": "Stap 2: Voer citaattekst in",
+    "step3": "Stap 3: Stijl je citaat",
+    "quoteText": "Citaattekst (max. 3 regels)",
+    "author": "Auteur",
+    "quoteMarksColor": "Kleur van aanhalingstekens",
+    "containerColor": "Containerkleur",
+    "personBgColor": "Achtergrondkleur persoon",
+    "preview": "Voorbeeld",
+    "downloadPng": "PNG downloaden"
+  },
+  "emailSignature": {
+    "title": "E-mailhandtekeninggenerator",
+    "description": "Maak professionele e-mailhandtekeningen met je profielfoto en contactgegevens.",
+    "step1": "Stap 1: Vul je gegevens in",
+    "step2": "Stap 2: Upload je profielfoto",
+    "firstName": "Voornaam",
+    "lastName": "Achternaam",
+    "phoneNumber": "Telefoonnummer",
+    "enterFirstName": "Vul je voornaam in",
+    "enterLastName": "Vul je achternaam in",
+    "enterPhoneNumber": "Vul je telefoonnummer in",
+    "preview": "Voorbeeld"
+  }
+} 

@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&family=Barlow+Semi+Condensed:wght@400;500;600;700&display=swap');
+
+/* Import specific component styles first */
+@import './styles/variables.css';
+@import './styles/base.css';
+@import './styles/layout.css';
+@import './styles/components.css';
+@import './styles/utilities.css';
+@import './custom-styles.css';
+
+/* Import Tailwind CSS */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* CSS Variables */
+:root {
+  --red: #f15e60;
+  --green: #5cbd74;
+  --blue: #4493cf;
+  --purple: #5E455E;
+  --yellow: #FED84E;
+  --gray: #e0e0e0;
+  --dark-gray: #666;
+  --light-gray: #f9f9f9;
+  --white: #ffffff;
+}
+
+/* Base styles */
+body {
+  margin: 0;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  background: #fff;
+  color: #302d30;
+  min-height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+  max-width: 1600px;
+}
+
+/* Custom utility classes */
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+/* Custom components */
+@layer components {
+  .btn {
+    @apply px-4 py-2 rounded-md font-medium transition-colors;
+  }
+  
+  .btn-primary {
+    @apply bg-primary text-white hover:bg-primary/90;
+  }
+  
+  .btn-secondary {
+    @apply bg-secondary text-white hover:bg-secondary/90;
+  }
+  
+  .input {
+    @apply w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary/50;
+  }
+  
+  .card {
+    @apply bg-white rounded-lg shadow-md p-6;
+  }
+}
+
+/* Import specific component styles */
+@import './styles/forms.css';
+@import './styles/profile-images.css';
+@import './styles/drive-integration.css';
+@import './styles/mask-options.css';
+@import './styles/responsive.css'; 

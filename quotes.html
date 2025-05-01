@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Quotes Tool - Game Tailors</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hugeicons@1.0.0/css/hugeicons.css" />
+  </head>
+  <body>
+    <nav class="sidebar">
+      <div class="company-name">Game Tailors</div>
+      
+      <div class="sidebar-section">
+        <div class="section-title">Tools</div>
+        <ul class="sidebar-links">
+          <li><a href="image-mask.html">Image Mask</a></li>
+          <li class="active"><a href="quotes.html">Quotes</a></li>
+        </ul>
+      </div>
+
+      <div class="sidebar-section">
+        <div class="section-title">Brand Book</div>
+        <ul class="sidebar-links">
+          <li><a href="#">Colors</a></li>
+          <li><a href="#">Typography</a></li>
+          <li><a href="#">Logo Usage</a></li>
+          <li><a href="#">Image Style</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <main>
+      <h1>Quote Creator</h1>
+
+      <div class="step" id="step1">Step 1: Select Person</div>
+      <div id="uploadZone">
+        <div><strong>Click or drag and drop a profile image here</strong></div>
+        <input type="file" id="imageInput" accept="image/png, image/jpeg" />
+        <img id="uploadPreview" alt="Preview" />
+      </div>
+
+      <div class="step" id="step2" style="display: none">
+        Step 2: Enter Quote Text
+      </div>
+      <div class="quote-input" id="quoteInput" style="display: none">
+        <label for="quoteText">
+          <strong>Quote Text</strong>
+          <span class="hint">(maximum 3 lines)</span>
+        </label>
+        <textarea 
+          id="quoteText" 
+          placeholder="Enter the quote text here..."
+          rows="3"
+          maxlength="300"
+        ></textarea>
+        <div class="quote-author">
+          <div class="input-group">
+            <label for="authorTitle"><strong>Author</strong></label>
+            <input 
+              type="text" 
+              id="authorTitle" 
+              placeholder="Author name or role"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="step" id="step3" style="display: none">
+        Step 3: Style Options
+      </div>
+      
+      <div class="style-options" id="styleOptions" style="display: none">
+        <div class="color-section">
+          <label><strong>Quote Marks Color</strong></label>
+          <div class="color-control">
+            <select class="color-dropdown" id="quoteMarksPreset">
+              <option value="">Choose brand color</option>
+              <option value="#4493cf">Blue</option>
+              <option value="#5e455e">Purple</option>
+              <option value="#f15e60">Red</option>
+              <option value="#5cbd74">Green</option>
+              <option value="#fed84e">Yellow</option>
+            </select>
+            <div class="color-picker-wrapper">
+              <label for="quoteMarksColor">Custom</label>
+              <input type="color" id="quoteMarksColor" value="#4493cf" />
+            </div>
+          </div>
+        </div>
+
+        <div class="color-section">
+          <label><strong>Quote Container Background</strong></label>
+          <div class="color-control">
+            <select class="color-dropdown" id="containerBgPreset">
+              <option value="">Choose brand color</option>
+              <option value="#ffffff">White</option>
+              <option value="#f5f5f5">Light Gray</option>
+              <option value="#e0e0e0">Gray</option>
+            </select>
+            <div class="color-picker-wrapper">
+              <label for="quoteContainerColor">Custom</label>
+              <input type="color" id="quoteContainerColor" value="#ededed" />
+            </div>
+          </div>
+        </div>
+
+        <div class="color-section" id="personBgSection" style="display: none">
+          <label><strong>Person Background Color</strong></label>
+          <div class="color-control">
+            <select class="color-dropdown" id="personBgPreset">
+              <option value="">Choose brand color</option>
+              <option value="#ffffff">White</option>
+              <option value="#f5f5f5">Light Gray</option>
+              <option value="#e0e0e0">Gray</option>
+            </select>
+            <div class="color-picker-wrapper">
+              <label for="personBgColor">Custom</label>
+              <input type="color" id="personBgColor" value="#ffffff" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="quote-preview" id="quotePreview" style="display: none">
+        <canvas
+          id="previewCanvas"
+          width="701"
+          height="169"
+          style="display: none"
+        ></canvas>
+      </div>
+
+      <div class="fixed-buttons">
+        <button id="downloadPng" class="green disabled">
+          💾 Export PNG
+        </button>
+        <button id="copyPng" class="green disabled">
+          📋 Copy to Clipboard
+        </button>
+      </div>
+    </main>
+    <div id="toast" class="toast"></div>
+    <script src="quotes.js"></script>
+  </body>
+</html> 

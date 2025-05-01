@@ -1,0 +1,307 @@
+/* Custom styles for the updated quote generator */
+
+/* Make the preview and inputs sections each 50% of the container */
+.content-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+/* Color circles styling */
+.color-circles-container {
+  margin: 1rem 0;
+}
+
+.color-circles {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  align-items: center;
+}
+
+.color-circle {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  border: 2px solid #ccc;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.color-circle:hover {
+  transform: scale(1.1);
+}
+
+.color-circle.selected {
+  border: 2px solid #000;
+  transform: scale(1.1);
+}
+
+.custom-color-btn {
+  background-color: #f0f0f0;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.custom-color-picker {
+  margin-top: 10px;
+}
+
+.custom-color-picker input[type="color"] {
+  width: 100%;
+  height: 40px;
+  cursor: pointer;
+}
+
+/* Styling for when no image is uploaded */
+.no-image-preview {
+  background-color: #ff0000;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: bold;
+}
+
+/* Better file upload area */
+.file-upload-area {
+  border: 2px dashed #ccc;
+  border-radius: 5px;
+  padding: 2rem;
+  text-align: center;
+  cursor: pointer;
+  margin-bottom: 1.5rem;
+}
+
+.file-upload-area:hover {
+  border-color: #888;
+}
+
+.file-upload-label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.file-upload-description {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+/* Profile Image Grid Styles */
+.profile-images-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  gap: 12px;
+  margin-top: 10px;
+}
+
+.profile-image-container {
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+  aspect-ratio: 1 / 1;
+  border: 2px solid transparent;
+}
+
+.profile-image-container:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.profile-image-container.selected {
+  border-color: #4285f4;
+  box-shadow: 0 0 0 2px rgba(66, 133, 244, 0.3);
+}
+
+.profile-image-item {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.profile-image-name {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  font-size: 12px;
+  padding: 4px;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+.profile-image-container:hover .profile-image-name {
+  opacity: 1;
+}
+
+/* Upload separator styling */
+.upload-separator {
+  display: flex;
+  align-items: center;
+  margin: 15px 0;
+  text-align: center;
+}
+
+.upload-separator span {
+  padding: 0 10px;
+  color: #666;
+  font-size: 14px;
+}
+
+.upload-separator::before,
+.upload-separator::after {
+  content: "";
+  flex: 1;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Google Drive images section - Enhanced */
+.drive-section {
+  margin-bottom: 20px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 15px;
+  background-color: #f9f9f9;
+}
+
+.drive-section-header {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #444;
+}
+
+.drive-section-header svg {
+  color: #4285F4;
+}
+
+.drive-images-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.drive-image-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+  background-color: white;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.drive-image-container:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.drive-image-item {
+  width: 100px;
+  height: 100px;
+  border-radius: 8px;
+  object-fit: cover;
+  border: 2px solid transparent;
+  transition: all 0.2s ease;
+}
+
+.drive-image-name {
+  margin-top: 8px;
+  font-size: 12px;
+  color: #444;
+  text-align: center;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.drive-image-container.selected {
+  background-color: #e3f2fd;
+  border-color: #4285F4;
+}
+
+.drive-loading-indicator {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 120px;
+  color: #666;
+}
+
+.loading-spinner {
+  border: 3px solid #f3f3f3;
+  border-top: 3px solid #4285F4;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  animation: spin 1s linear infinite;
+  margin-top: 15px;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.drive-error-message {
+  color: #d32f2f;
+  padding: 12px;
+  border-radius: 4px;
+  background-color: #ffebee;
+  margin: 10px 0;
+  font-size: 14px;
+}
+
+/* Manual File Input Styles */
+.manual-file-input {
+  background-color: white;
+  padding: 12px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+}
+
+.manual-file-input .input-group {
+  display: flex;
+  gap: 8px;
+}
+
+.manual-file-input input {
+  flex: 1;
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+button.small {
+  padding: 6px 12px;
+  font-size: 14px;
+  height: auto;
+  white-space: nowrap;
+}
+
+.section-separator {
+  margin: 20px 0;
+  height: 1px;
+  background-color: #ddd;
+} 
